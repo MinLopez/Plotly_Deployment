@@ -7,15 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container bg-success text-white">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron jumbotron-fluid " >
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <blockquote class="blockquote">
+        <p>Use the interactive charts below to explore the dataset</p></blockquote>
       </div>
     </div>
     <div class="row">
@@ -25,30 +27,48 @@
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-success">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
+
+  
+      <div class="col-md-5 padding-xs">
+        <div id="bar">
+        </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5  padding-xs">
         <div id="gauge"></div>
       </div>
-    </div>
+      
+      <div class="col-md-6 padding-xs text-center">
+        <h2>Thank you for being our test subject!</h2>
+        </div>
+      <div class="col-md-6 padding-xs text-left">
+        <p><b><small>Top 10 Bacteria Cultures Found</b> displays the most common bacteria found in your belly button.</small></p>
+        <p><b><small>Belly Button Washing Frequency</b> shows how often you clean.</small></p>
+        <p><b><small>Bacteria Cultures per Sample</b> show the amount of each bacteria type and how big your culture is.</small></p>
+        </div>
+
+      </div>
+    
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-6">
         <div id="bubble"></div>
       </div>
     </div>
+
+    </div>
   </div>
+ 
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="chart.js"></script>
 
 </body>
 

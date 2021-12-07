@@ -1,0 +1,12 @@
+body {
+
+    color: #000000;
+    background-color:#265039;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.jumbotron {
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/14/10/22/bacteria-808751_1280.jpg");
+  background-size: 100% 100%;
+  color:white;
+}
