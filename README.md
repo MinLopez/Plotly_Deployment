@@ -28,5 +28,3 @@ Changes made:
 ![Resources/940Bubble.png](Resources/940Bubble.png) 
 
 *Shows how much of each bacteria present in the belly button of **test subject 940** *
-
-![Resources/Format_date.png](Resources/Format_date.png) 
